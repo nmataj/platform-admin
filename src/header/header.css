@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  color: inherit;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter button.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
