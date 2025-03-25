@@ -1,1 +1,0 @@
-export * as FilterTable from './FilterTable';

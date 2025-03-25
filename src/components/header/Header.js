@@ -1,4 +1,4 @@
-import './header.css';
+import './Header.module.css';
 import { Logo } from './logo/Logo';
 import { Filter } from './filter/Filter';
 

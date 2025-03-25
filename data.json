@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "companyName": "TechCorp",
+    "ownerEmail": "owner1@techcorp.com"
+  },
+  {
+    "id": 2,
+    "companyName": "Innovatech",
+    "ownerEmail": "owner2@innovatech.com"
+  },
+  {
+    "id": 3,
+    "companyName": "FutureSoft",
+    "ownerEmail": "owner3@futuresoft.com"
+  },
+  {
+    "id": 4,
+    "companyName": "Alpha Solutions",
+    "ownerEmail": "owner4@alphasolutions.com"
+  },
+  {
+    "id": 5,
+    "companyName": "Beta Systems",
+    "ownerEmail": "owner5@betasystems.com"
+  },
+  {
+    "id": 6,
+    "companyName": "Gamma Enterprises",
+    "ownerEmail": "owner6@gammaenterprises.com"
+  },
+  {
+    "id": 7,
+    "companyName": "Delta Dynamics",
+    "ownerEmail": "owner7@deltadynamics.com"
+  },
+  {
+    "id": 8,
+    "companyName": "Epsilon Tech",
+    "ownerEmail": "owner8@epsilontech.com"
+  },
+  {
+    "id": 9,
+    "companyName": "Zeta Innovations",
+    "ownerEmail": "owner9@zetainnovations.com"
+  },
+  {
+    "id": 10,
+    "companyName": "Omicron Labs",
+    "ownerEmail": "owner10@omicronlabs.com"
+  },
+  {
+    "id": 11,
+    "companyName": "Lambda Works",
+    "ownerEmail": "owner11@lambdaworks.com"
+  },
+  {
+    "id": 12,
+    "companyName": "Sigma Solutions",
+    "ownerEmail": "owner12@sigmasolutions.com"
+  },
+  {
+    "id": 13,
+    "companyName": "Theta Technologies",
+    "ownerEmail": "owner13@thetatechnologies.com"
+  },
+  {
+    "id": 14,
+    "companyName": "Kappa Systems",
+    "ownerEmail": "owner14@kappasystems.com"
+  },
+  {
+    "id": 15,
+    "companyName": "Iota Enterprises",
+    "ownerEmail": "owner15@iotaenterprises.com"
+  },
+  {
+    "id": 16,
+    "companyName": "NuTech",
+    "ownerEmail": "owner16@nutech.com"
+  },
+  {
+    "id": 17,
+    "companyName": "PiSoft",
+    "ownerEmail": "owner17@pisoft.com"
+  },
+  {
+    "id": 18,
+    "companyName": "Rho Dynamics",
+    "ownerEmail": "owner18@rhodynamics.com"
+  },
+  {
+    "id": 19,
+    "companyName": "Tau Innovations",
+    "ownerEmail": "owner19@tauinnovations.com"
+  },
+  {
+    "id": 20,
+    "companyName": "Chi Labs",
+    "ownerEmail": "owner20@chilabs.com"
+  },
+  {
+    "id": 21,
+    "companyName": "Psi Works",
+    "ownerEmail": "owner21@psiworks.com"
+  },
+  {
+    "id": 22,
+    "companyName": "Omega Solutions",
+    "ownerEmail": "owner22@omegasolutions.com"
+  },
+  {
+    "id": 23,
+    "companyName": "Vega Enterprises",
+    "ownerEmail": "owner23@vegaenterprises.com"
+  },
+  {
+    "id": 24,
+    "companyName": "Lyra Tech",
+    "ownerEmail": "owner24@lyratech.com"
+  },
+  {
+    "id": 25,
+    "companyName": "Orion Systems",
+    "ownerEmail": "owner25@orionsystems.com"
+  },
+  {
+    "id": 26,
+    "companyName": "Phoenix Dynamics",
+    "ownerEmail": "owner26@phoenixdynamics.com"
+  },
+  {
+    "id": 27,
+    "companyName": "Nova Innovations",
+    "ownerEmail": "owner27@novainnovations.com"
+  },
+  {
+    "id": 28,
+    "companyName": "Pioneer Labs",
+    "ownerEmail": "owner28@pioneerlabs.com"
+  },
+  {
+    "id": 29,
+    "companyName": "Horizon Works",
+    "ownerEmail": "owner29@horizonworks.com"
+  },
+  {
+    "id": 30,
+    "companyName": "Apex Solutions",
+    "ownerEmail": "owner30@apexsolutions.com"
+  },
+  {
+    "id": 31,
+    "companyName": "Summit Enterprises",
+    "ownerEmail": "owner31@summitenterprises.com"
+  },
+  {
+    "id": 32,
+    "companyName": "Vertex Tech",
+    "ownerEmail": "owner32@vertextech.com"
+  },
+  {
+    "id": 33,
+    "companyName": "Nexus Systems",
+    "ownerEmail": "owner33@nexussystems.com"
+  },
+  {
+    "id": 34,
+    "companyName": "Quantum Dynamics",
+    "ownerEmail": "owner34@quantumdynamics.com"
+  },
+  {
+    "id": 35,
+    "companyName": "Infinity Innovations",
+    "ownerEmail": "owner35@infinityinnovations.com"
+  },
+  {
+    "id": 36,
+    "companyName": "Eclipse Labs",
+    "ownerEmail": "owner36@eclipselabs.com"
+  },
+  {
+    "id": 37,
+    "companyName": "Stellar Works",
+    "ownerEmail": "owner37@stellarworks.com"
+  },
+  {
+    "id": 38,
+    "companyName": "Cosmos Solutions",
+    "ownerEmail": "owner38@cosmossolutions.com"
+  },
+  {
+    "id": 39,
+    "companyName": "Nebula Enterprises",
+    "ownerEmail": "owner39@nebulaenterprises.com"
+  },
+  {
+    "id": 40,
+    "companyName": "Galaxy Tech",
+    "ownerEmail": "owner40@galaxytech.com"
+  },
+  {
+    "id": 41,
+    "companyName": "Astro Systems",
+    "ownerEmail": "owner41@astrosystems.com"
+  },
+  {
+    "id": 42,
+    "companyName": "Lunar Dynamics",
+    "ownerEmail": "owner42@lunardynamics.com"
+  },
+  {
+    "id": 43,
+    "companyName": "Solar Innovations",
+    "ownerEmail": "owner43@solarinnovations.com"
+  },
+  {
+    "id": 44,
+    "companyName": "Meteor Labs",
+    "ownerEmail": "owner44@meteorlabs.com"
+  },
+  {
+    "id": 45,
+    "companyName": "Comet Works",
+    "ownerEmail": "owner45@cometworks.com"
+  },
+  {
+    "id": 46,
+    "companyName": "Orbit Solutions",
+    "ownerEmail": "owner46@orbitsolutions.com"
+  },
+  {
+    "id": 47,
+    "companyName": "Pulsar Enterprises",
+    "ownerEmail": "owner47@pulsarenterprises.com"
+  },
+  {
+    "id": 48,
+    "companyName": "Supernova Tech",
+    "ownerEmail": "owner48@supernovatech.com"
+  },
+  {
+    "id": 49,
+    "companyName": "Blackhole Systems",
+    "ownerEmail": "owner49@blackholesystems.com"
+  },
+  {
+    "id": 50,
+    "companyName": "EventHorizon Dynamics",
+    "ownerEmail": "owner50@eventhorizondynamics.com"
+  }
+]
