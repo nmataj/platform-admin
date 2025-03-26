@@ -22,7 +22,7 @@ export async function App() {
   showLoadingSpinner();
 
   try {
-    const data = await serverApiFetch();
+    const data = await serverApiFetch('./data.json');
     updateTable(data, dataTable);
 
     hideLoadingSpinner();
