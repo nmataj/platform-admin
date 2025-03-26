@@ -1,4 +1,4 @@
-import './DataTable.module.css';
+import './DataTable.css';
 
 const headersArray = ['ID', 'Company Name', 'Owner email'];
 
