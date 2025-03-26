@@ -5,7 +5,8 @@ const headers = {
 
 export async function serverApiFetch(url = import.meta.env.VITE_URL, method = 'GET', query = '') {
   try {
-    let response = await fetch(`${url}`, { method, headers });
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    const response = await fetch(url, { method, headers });
 
     if (!response.ok) {
       throw new Error(`Failed to load data from ${url}.`);

@@ -3,6 +3,7 @@ import { Header } from '@/components/header';
 import { DataTable } from '@/components/data-table';
 import { serverApiFetch } from '@/helpers/serverApiFetch';
 import { hideLoadingSpinner, showLoadingSpinner } from './components/ui/loading/Loading';
+import { showErrorModal } from './components/ui/error/Error';
 import { Controls, handleSearch } from './components/ui/controls/';
 import { updateTable } from '@/components/data-table';
 
@@ -25,11 +26,12 @@ export async function App() {
     updateTable(data, dataTable);
 
     hideLoadingSpinner();
+    throw new Error('Test error handling');
   } catch (error) {
     console.error('Error loading data:', error);
 
-    hideLoadingSpinner();
-    // showErrorModal();
+   hideLoadingSpinner();
+   showErrorModal('Error loading data. Please try again later.');
   }
 }
 

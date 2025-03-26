@@ -41,6 +41,11 @@ input[type="search"] {
   color: inherit;
 }
 
+#search-bar:focus {
+  outline: 2px solid #4caf50;
+  outline-offset: 2px;
+}
+
 .create-account {
   background-color: #4caf50;
   color: white;
