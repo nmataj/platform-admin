@@ -6,10 +6,11 @@ const headers = {
 export async function serverApiFetch(url = import.meta.env.VITE_URL, method = 'GET', query = '') {
   try {
     // await new Promise(resolve => setTimeout(resolve, 1500));
-    const response = await fetch(url, { method, headers });
-
+    const response = !await fetch(url, { method, headers });
+    
     if (!response.ok) {
-      throw new Error(`Failed to load data from ${url}.`);
+      throw new Error(response.message || 
+                      `Failed to load data from ${url}.`);
     }
 
     const data = await response.json();
@@ -18,7 +19,7 @@ export async function serverApiFetch(url = import.meta.env.VITE_URL, method = 'G
     return filteredData;
   } catch (error) {
     console.error('Error fetching data:', error);
-    throw new Error(error);
+    throw new Error(`Error ${method}ing data from ${url}.`);
   }
 }
 
