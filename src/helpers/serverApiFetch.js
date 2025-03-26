@@ -18,8 +18,7 @@ export async function serverApiFetch(url = import.meta.env.VITE_URL, method = 'G
 
     return filteredData;
   } catch (error) {
-    console.error('Error fetching data:', error);
-    throw new Error(`Error ${method}ing data from ${url}.`);
+    throw new Error(`Error ${method.toLowerCase()}ing data from ${url}. ${error.message}.`);
   }
 }
 
