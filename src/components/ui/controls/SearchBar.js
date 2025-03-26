@@ -3,6 +3,15 @@ import { serverApiFetch } from '@/helpers/serverApiFetch';
 import { updateTable } from '@/components/data-table';
 
 export function SearchBar(onSearch) {
+  const body     = document.querySelector('body');
+  const skipLink = document.createElement('a');
+  
+  skipLink.href = '#search-bar';
+  skipLink.className = 'skip-link';
+  skipLink.textContent = 'Skip to Search';
+  
+  body.appendChild(skipLink);
+
   const input = document.createElement('input');
   input.type = 'search';
   input.id = 'search-bar';
