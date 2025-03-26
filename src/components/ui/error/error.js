@@ -1,4 +1,4 @@
-import './error.css';
+import './Error.module.css';
 
 export function showErrorModal(message) {
   let errorModal = document.getElementById('error-modal');

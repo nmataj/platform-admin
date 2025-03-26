@@ -7,16 +7,16 @@ export function DataTable(data = [], headers = headersArray) {
   const thead     = table.createTHead();
   const headerRow = thead.insertRow();
 
-  const actualHeaders = data.length > 0 ? Object.keys(data[0]) 
-                                        : headers;
+  //const actualHeaders = data.length > 0 ? Object.keys(data[0]) 
+  //                                      : headers;
 
-  if (!actualHeaders || actualHeaders.length === 0) {
+  if (!headers || headers.length === 0) {
     const th = document.createElement('th');
     th.textContent = 'No data';
     th.colSpan = 1;
     headerRow.appendChild(th);
   } else {
-    actualHeaders.forEach((headerText) => {
+    headers.forEach((headerText) => {
       const th = document.createElement('th');
       th.textContent = headerText;
       headerRow.appendChild(th);

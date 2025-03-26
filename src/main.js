@@ -2,10 +2,8 @@ import './style.css';
 import { Header } from '@/components/header';
 import { DataTable } from '@/components/data-table';
 import { serverApiFetch } from '@/helpers/serverApiFetch';
-import { hideLoadingSpinner, showLoadingSpinner } from './components/ui/loading/loading';
-import { showErrorModal } from './components/ui/error/error';
-import { Controls } from './components/ui/controls/Controls';
-import { handleSearch } from './components/ui/controls/SearchBar';
+import { hideLoadingSpinner, showLoadingSpinner } from './components/ui/loading/Loading';
+import { Controls, handleSearch } from './components/ui/controls/';
 import { updateTable } from '@/components/data-table';
 
 export async function App() {

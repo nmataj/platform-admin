@@ -1,4 +1,4 @@
-import './loading.css';
+import './Loading.module.css';
 
 export function showLoadingSpinner() {
   let loadingContainer = document.getElementById('loading-container');
