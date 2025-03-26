@@ -1,6 +1,7 @@
 export function createSearchBar(onSearch) {
   const input = document.createElement('input');
   input.type = 'search';
+  input.id = 'search-bar';
   input.placeholder = 'Search';
   input.setAttribute('aria-label', 'Search');
 
