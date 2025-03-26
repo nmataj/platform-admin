@@ -25,9 +25,9 @@ function filterDataByQuery(data, query) {
   if (!query) return data;
 
   const lowerQuery = query.toLowerCase();
-  return data.filter((item) =>
-    Object.values(item).some((value) =>
-      String(value).toLowerCase().includes(lowerQuery),
-    ),
-  );
+
+  return data.filter(item => Object.values(item)
+                                   .some(value => String(value)
+                                   .toLowerCase()
+                                   .includes(lowerQuery)));
 }

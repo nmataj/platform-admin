@@ -1,18 +1,13 @@
-export function createSearchBar(onSearch) {
+import { debounce } from '@/helpers/dataHelpers';
+import { serverApiFetch } from '@/helpers/serverApiFetch';
+import { updateTable } from '@/components/data-table';
+
+export function SearchBar(onSearch) {
   const input = document.createElement('input');
   input.type = 'search';
   input.id = 'search-bar';
   input.placeholder = 'Search';
   input.setAttribute('aria-label', 'Search');
-
-  let debounceTimeout;
-  
-  const debounce = (callback, delay) => {
-    return (...args) => {
-      clearTimeout(debounceTimeout);
-      debounceTimeout = setTimeout(() => callback(...args), delay);
-    };
-  };
 
   const handleInput = debounce((e) => {
     const query = e.target.value.trim();
@@ -21,4 +16,9 @@ export function createSearchBar(onSearch) {
   input.addEventListener('input', handleInput);
 
   return input;
+}
+
+export async function handleSearch(query, dataTable) {
+  const data = await serverApiFetch('./data.json', 'GET', query);
+  updateTable(data, dataTable);
 }

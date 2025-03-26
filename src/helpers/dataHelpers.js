@@ -1,3 +1,21 @@
+export function generateData() {
+  const data = companies.map((company, index) => ({
+    id: index + 1,
+    companyName: company,
+    ownerEmail: `owner${index + 1}@${company.toLowerCase().replace(/\s+/g, '')}.com`
+  }));
+
+  return data;
+};
+
+export function debounce(callback, delay) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => callback(...args), delay);
+  };
+}
+
 const companies = [
   "TechCorp", "Innovatech", "FutureSoft", "Alpha Solutions", "Beta Systems",
   "Gamma Enterprises", "Delta Dynamics", "Epsilon Tech", "Zeta Innovations",
@@ -12,13 +30,3 @@ const companies = [
   "Solar Innovations", "Meteor Labs", "Comet Works", "Orbit Solutions",
   "Pulsar Enterprises", "Supernova Tech", "Blackhole Systems", "EventHorizon Dynamics"
 ];
-
-export function generateData() {
-  const data = companies.map((company, index) => ({
-    id: index + 1,
-    companyName: company,
-    ownerEmail: `owner${index + 1}@${company.toLowerCase().replace(/\s+/g, '')}.com`
-  }));
-
-  return data;
-};

@@ -36,7 +36,7 @@ export function DataTable(data = [], headers = headersArray) {
   return table;
 }
 
-export function updateTable(table, data) {
+export function updateTable(data, table) {
   const tbody = table.querySelector('tbody');
   tbody.innerHTML = '';
 
