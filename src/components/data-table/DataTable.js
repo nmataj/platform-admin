@@ -1,28 +1,52 @@
 import './DataTable.module.css';
 
-export function DataTable(data) {
-  if (!data || data.length === 0) return document.createTextNode('No data available.');
+const headersArray = ['ID', 'Company Name', 'Owner email'];
 
-  const table = document.createElement('table');
-  const header = table.createTHead();
-  const headerRow = header.insertRow(0);
+export function DataTable(data = [], headers = headersArray) {
+  const table     = document.createElement('table');
+  const thead     = table.createTHead();
+  const headerRow = thead.insertRow();
 
-  const headers = Object.keys(data[0]);
-  headers.forEach((headerText) => {
+  const actualHeaders = data.length > 0 ? Object.keys(data[0]) 
+                                        : headers;
+
+  if (!actualHeaders || actualHeaders.length === 0) {
     const th = document.createElement('th');
-    th.textContent = headerText;
+    th.textContent = 'No data';
+    th.colSpan = 1;
     headerRow.appendChild(th);
-  });
+  } else {
+    actualHeaders.forEach((headerText) => {
+      const th = document.createElement('th');
+      th.textContent = headerText;
+      headerRow.appendChild(th);
+    });
+  }
 
   const tbody = table.createTBody();
+
   data.forEach((item) => {
     const row = tbody.insertRow();
-    headers.forEach((key) => {
+    actualHeaders.forEach((key) => {
       const cell = row.insertCell();
-      cell.textContent = item[key];
+      cell.textContent = item[key] || '';
     });
   });
 
-
   return table;
+}
+
+export function updateTable(table, data) {
+  const tbody = table.querySelector('tbody');
+  tbody.innerHTML = '';
+
+  data.forEach(row => {
+    const tr = document.createElement('tr');
+    Object.values(row).forEach(value => {
+      const td = document.createElement('td');
+      td.textContent = value;
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
 }
