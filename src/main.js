@@ -26,7 +26,6 @@ export async function App() {
     updateTable(data, dataTable);
 
     hideLoadingSpinner();
-    throw new Error('Test error handling');
   } catch (error) {
     console.error('Error loading data:', error);
 

@@ -19,7 +19,7 @@
   height: 100px;
   animation: spin 2s linear infinite;
   margin: auto; 
-  margin-top: 10%;
+  margin-top: 30%;
 }
 
 @keyframes spin {

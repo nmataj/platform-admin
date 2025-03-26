@@ -5,7 +5,7 @@ const headers = {
 
 export async function serverApiFetch(url = import.meta.env.VITE_URL, method = 'GET', query = '') {
   try {
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // await new Promise(resolve => setTimeout(resolve, 1500));
     const response = await fetch(url, { method, headers });
 
     if (!response.ok) {
