@@ -3,7 +3,7 @@ import { Header } from '@/components/header';
 import { DataTable } from '@/components/data-table';
 import { serverApiFetch } from '@/helpers/serverApiFetch';
 import { hideLoadingSpinner, showLoadingSpinner } from './components/ui/loading/Loading';
-import { showErrorModal } from './components/ui/error/Error';
+import { showErrorModal } from '@/components/ui/error/Error';
 import { Controls, handleSearch } from './components/ui/controls/';
 import { updateTable } from '@/components/data-table';
 
