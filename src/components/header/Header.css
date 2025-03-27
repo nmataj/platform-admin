@@ -1,6 +1,5 @@
 header {
   --header-background-color: #259bc1;
-  /*color: rgba(255, 255, 255, 0.1);*/
   --header-text-color: #ffffff;
   --header-width: 1230px;
   --header-height: 50px;
@@ -13,15 +12,6 @@ header {
   --filter-text-line-height: 17px;
   --filter-text-font-size: 14px;
   
-   /*
-  width: var(--filter-button-width);
-  height: var(--filter-button-height);
-
-  /* --filter-button-width: 32px;
-  --filter-button-height: 32px;
-  --filter-active-button-border-radius: 8px;
-  */
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +44,10 @@ header {
   font-size: var(--filter-text-font-size);
 
   color: rgba(255, 255, 255, 0.5);
+
+  flex-wrap: nowrap;
+  
+  -webkit-overflow-scrolling: touch;
 }
 
 .filter button {
@@ -61,7 +55,6 @@ header {
   background: transparent;
   cursor: pointer;
 
-  /* figma */
   color: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   font-size: 14px;
@@ -83,5 +76,20 @@ header {
 @media (max-width: 768px) {
   header {
     padding-inline: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    padding-inline: 16px;
+  }
+
+  .filter {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .filter button {
+    font-size: 12px;
   }
 }

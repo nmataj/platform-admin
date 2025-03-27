@@ -3,6 +3,9 @@ import './DataTable.css';
 const headersArray = ['ID', 'Company Name', 'Owner email'];
 
 export function DataTable(data = [], headers = headersArray) {
+  const tableWrapper = document.createElement('div');
+  tableWrapper.classList.add('table-wrapper');
+
   const table     = document.createElement('table');
   const thead     = table.createTHead();
   const headerRow = thead.insertRow();
@@ -33,7 +36,8 @@ export function DataTable(data = [], headers = headersArray) {
     });
   });
 
-  return table;
+  tableWrapper.append(table);
+  return tableWrapper;
 }
 
 export function updateTable(data, table) {

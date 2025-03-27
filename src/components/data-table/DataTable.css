@@ -1,37 +1,70 @@
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  padding: 20px 116px;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
 table {
-
-  --table-width: 998px;
-  --table-margin: 116px;
-  
-  --table-header-line-height: 13.2px;
   --table-header-font-size: 12px;
-
-
-  --table-header-company-font-size: 16px;
-  --table-header-company-line-height: 16px;
+  --table-company-font-size: 16px;
+  --table-company-line-height: 16px;
 
   --table-header-text-color: #aaacaf;
 
   --table-row-text-color: #7b7d80;
   --table-row-line-height: 14px;
   --table-row-font-size: 14px;
+  --table-row-height: 48px;
 
-  width: var(--table-width);
-  margin: 0 var(--table-margin);
-
+  width: 100%;
+  
+  table-layout: auto;
   border-collapse: collapse;
 }
 
 th, td {
-  border: 1px solid #ccc;
+  white-space: nowrap;
+  border: none;
   padding: 8px;
   text-align: left;
+  height: var(--table-row-height);
 }
 
 th {
-  background-color: #f4f4f4;
+  font-weight: 400;
+  color: var(--table-header-text-color);
+  font-size: var(--table-header-font-size);
+}
+
+td {
+  font-size var(--table-row-font-size);
+  color: var(--table-row-text-color);
 }
 
 table tr:nth-child(even) td:nth-child(2) {
   font-weight: bold;
+}
+
+table td:nth-child(2) {
+  font-size: var(--table-company-font-size);
+  color: black;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  width: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    padding-inline: 24px;
+  }
+  
+  th, td {
+    padding: 4px;
+    height: 38px;
+  }
 }
