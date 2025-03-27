@@ -2,6 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0 !important;
 
   color-scheme: light dark;
 
@@ -21,9 +22,6 @@
 
   --search-section-height: 68px;
 
-  --create-button-color: #8dc63f;
-  --button-padding-tb:18px; //search input isto
-
   --line-height: 12px;
   --font-size: 11px;
 
@@ -32,17 +30,6 @@
 
   --search-line-height: 17px;
   --search-font-size: 12px;
-
-  --create-new-account-button-line-height: 17px;
-  --create-new-account-button-font-size: 14px;
-
-
-  --button-width: 161px;
-  --button-height: 32px;
-
-  --search-bar-width: 231px;
-  --search-bar-height: 32px;
-  --search-bar-stroke-color: #e5e5e5;
 
   color: var(--text-color);
   background-color: #ffffff;
@@ -61,43 +48,6 @@ body {
   min-height: 100vh;
   background-color: inherit;
   color: inherit;
-}
-
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: inherit;
-}
-
-input[type="search"] {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: transparent;
-  color: inherit;
-}
-
-#search-bar:focus {
-  outline: 2px solid #4caf50;
-  outline-offset: 2px;
-}
-
-.create-account {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.25s;
-}
-
-.create-account:hover {
-  background-color: #45a049;
 }
 
 .company-list {
@@ -123,7 +73,7 @@ th {
   color: #bbb;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -136,12 +86,6 @@ th {
 
   .filter button.active {
     background-color: rgba(255, 255, 255, 0.3);
-  }
-
-  input[type="search"] {
-    border: 1px solid #ccc;
-    background-color: white;
-    color: #000;
   }
 
   table {
@@ -161,7 +105,7 @@ th {
   .create-account:hover {
     background-color: #7cb342;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .controls {

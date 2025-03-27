@@ -1,0 +1,28 @@
+.create-account {
+  --button-color: #8dc63f;
+  --button-padding-lr: 18px;
+  --button-line-height: 17px;
+  --button-font-size: 14px;
+
+  --button-width: 161px;
+  --button-height: 32px;
+
+  background-color: var(--button-color);
+  width: var(--button-width);
+  height: var(--button-height);
+
+  color: white;
+  font-size: var(--button-font-size);
+  text-align: center;
+  flex-wrap: nowrap;
+
+  border: none;
+  padding: 0 var(--button-padding-lr);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.create-account:hover {
+  background-color: #45a049;
+}

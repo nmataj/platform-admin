@@ -1,3 +1,5 @@
+import './Controls.css';
+
 import { AccountButton } from "./AccountButton";
 import { SearchBar } from "./SearchBar";
 

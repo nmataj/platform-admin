@@ -1,3 +1,5 @@
+import './SearchBar.css';
+
 import { debounce } from '@/helpers/dataHelpers';
 import { serverApiFetch } from '@/helpers/serverApiFetch';
 import { updateTable } from '@/components/data-table';
