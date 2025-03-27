@@ -3,7 +3,7 @@ export function Logo() {
   logoContainer.classList.add('logo-container');
 
   const logoImg = document.createElement('img');
-  logoImg.src = '/vite.svg';
+  logoImg.src = '/logo.svg';
   logoImg.alt = 'Platform Admin Logo';
   logoImg.classList.add('logo-img');
 

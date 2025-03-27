@@ -1,5 +1,24 @@
 table {
-  width: 100%;
+
+  --table-width: 998px;
+  --table-margin: 116px;
+  
+  --table-header-line-height: 13.2px;
+  --table-header-font-size: 12px;
+
+
+  --table-header-company-font-size: 16px;
+  --table-header-company-line-height: 16px;
+
+  --table-header-text-color: #aaacaf;
+
+  --table-row-text-color: #7b7d80;
+  --table-row-line-height: 14px;
+  --table-row-font-size: 14px;
+
+  width: var(--table-width);
+  margin: 0 var(--table-margin);
+
   border-collapse: collapse;
 }
 
@@ -11,4 +30,8 @@ th, td {
 
 th {
   background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) td:nth-child(2) {
+  font-weight: bold;
 }

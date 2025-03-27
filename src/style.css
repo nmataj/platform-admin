@@ -1,11 +1,51 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  font-size: 16px;
+
+  --table-text-color: #000;
+  --table-cell-color: '#f78ae7';
+
+  --background-color: #ffffff;
+  --search-text-color: #e5e5e5;
+  --search-icon-stroke-color: #e5e5e5;
+
+  --table-company-name-color: #000000;
+  --text-color: #000;
+
+  --search-icon-color: #c7c9cd;
+
+  --search-section-height: 68px;
+
+  --create-button-color: #8dc63f;
+  --button-padding-tb:18px; //search input isto
+
+  --line-height: 12px;
+  --font-size: 11px;
+
+  --filter-line-height: 17px;
+  --filter-font-size: 14px;
+
+  --search-line-height: 17px;
+  --search-font-size: 12px;
+
+  --create-new-account-button-line-height: 17px;
+  --create-new-account-button-font-size: 14px;
+
+
+  --button-width: 161px;
+  --button-height: 32px;
+
+  --search-bar-width: 231px;
+  --search-bar-height: 32px;
+  --search-bar-stroke-color: #e5e5e5;
+
+  color: var(--text-color);
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -89,10 +129,6 @@ th {
     background-color: #ffffff;
   }
 
-  header {
-    background-color: #2196f3;
-    color: white;
-  }
 
   .filter button {
     color: white;
