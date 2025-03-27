@@ -16,31 +16,38 @@ table {
   --table-row-text-color: #7b7d80;
   --table-row-line-height: 14px;
   --table-row-font-size: 14px;
-  --table-row-height: 48px;
+  --table-row-height: 40px;
+  --border-color: #e5e5e5;
 
   width: 100%;
-  
-  table-layout: auto;
   border-collapse: collapse;
 }
 
 th, td {
   white-space: nowrap;
   border: none;
-  padding: 8px;
+  padding: 4px 8px;
   text-align: left;
+
   height: var(--table-row-height);
+  border-bottom: 1px solid var(--border-color);
 }
 
 th {
   font-weight: 400;
   color: var(--table-header-text-color);
   font-size: var(--table-header-font-size);
+  height: 30px;
 }
 
 td {
-  font-size var(--table-row-font-size);
+  width: auto;
+  font-size: var(--table-row-font-size);
   color: var(--table-row-text-color);
+}
+
+td:last-child {
+  width: 99%;
 }
 
 table tr:nth-child(even) td:nth-child(2) {
